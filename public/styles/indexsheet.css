@@ -1,0 +1,18 @@
+body{
+ font-family: Verdana;
+ background-color: #f6f0bc;
+}
+
+.main-container{
+ background-color: #084977;
+ margin-top: 1%;
+ margin-left: 10%;
+ margin-right: 10%;
+ margin-bottom: 1%;
+ padding: 10px;
+}
+
+.site-title{
+ text-align: center;
+ color:white;
+}

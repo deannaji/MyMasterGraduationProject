@@ -1,0 +1,61 @@
+<!doctype html>
+<style> table, th, td {border: 1px solid black; border-collapse: collapse;}</style>
+<html>
+ <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <title>Faculty Portal</title>
+ </head>
+ <body>
+   <header>
+     <div class= "header-container">
+         <span class="subpagetitle">Assessment Report</span>
+     </div>
+   </header>
+
+   <main>
+     <div class="main-container">
+
+       <div class="assessment-report-container">
+          <h2><span class="className">[className]</span> Class Assessment Report:</h2>
+          <br><br>
+          <h3>Class Assessment Table:</h3>
+          <table class="assessment-report-table">
+             <tr>
+                <th></th>
+                <th>Total assessed<span></span></th>
+                <th>Satisfactory<span></span></th>
+                <th>Developing<span></span></th>
+                <th>Unsatisfactory<span></span></th>
+             </tr>
+
+          </table>
+
+       </div>
+       <br><br>
+       <h3>Class Assessment Indicators:</h3>
+       <div class="indicators-container">
+          <table class="indicators-table">
+             <tr>
+               <th>Indicator</th>
+               <th>Type of work</th>
+             </tr>
+
+          </table>
+       </div>
+     <br><br>
+     <p>
+         <button class="downloadAssessmentReport" class="fa fa-save">Download</button>
+         <button class="back-to-classes"> <-Go back </button>
+     </p>
+     </div><!--End of main-container-->
+   </main>
+
+   <footer>
+   </footer>
+    <script src="/javascripts/lib/jquery-2.2.4.min.js"></script>
+    <script src="/javascripts/assessmentReport.js"></script>
+ </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Graduate-project-app",
+  "description": "This is my masters graduation project app",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "html-to-pdf": "^0.1.11",
+    "mongoose": "^4.6.7",
+    "multer": "^1.2.1",
+    "mysql": "^2.11.1",
+    "phantom": "^4.0.0",
+    "socket.io": "^1.4.5",
+    "webpage": "^0.3.0"
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="/styles/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <title>User Account</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <span class="subpagetitle">User Account</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="userInfo">
+               <p>Username: <span class="uname">...<span></p>
+               <p>Email: <span class="email">...<span></p>
+               <p>
+                 <p id="pwdchange">Change password</p>
+                 <div class="pwd-change-container">
+                   <input id="oldpwd" type="text" placeholder="Old password" /><br><br>
+                   <input id="newpwd" type="text" placeholder="New password" /><br><br> 
+                   <button id="savepwd">Save password</button>
+                   <button id="cancelpwd">Cancel</button>
+                 </div>
+               </p>                    
+            </div>
+            <button id="backToClasses" class="fa fa-arrow-left"> Go back</button>          
+        </div><!--End of main-container-->
+    </main>
+
+    <footer>
+    </footer>
+    <script src="/javascripts/lib/jquery-2.2.4.min.js"></script>
+    <script src="/javascripts/userAccount.js"></script>
+</body>
+
+</html>

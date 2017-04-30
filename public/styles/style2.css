@@ -1,0 +1,230 @@
+html, body{
+  font-family: Verdana;
+  position: relative;
+  background-color: white;
+  /*background-image: url("/images/background.jpg");*/
+  height: 100%;
+  width: 100%;
+  /*margin: 8px;*/
+}
+
+/*main{
+ height:100%;
+ margin-top: 0px;  
+}*/
+
+header{
+  position: absolute;
+  width :95%;
+  left: 2%;
+  right:2%;
+  top:1%; 
+ border-radius: 15px 15px 0px 0px;
+ height: 5%;
+ /*margin-left: 2%;
+ margin-right: 2%;*/
+ background-color: #084977; /*#9e9015;*/
+ color: white;
+ padding: 5px;
+ overflow: auto;
+}
+
+.header-container{ 
+  font-family:"Ubuntu";
+}
+
+.welcome-container{ 
+  font-size: medium;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+.username{
+ cursor: pointer;
+}
+
+.logout-container{ 
+  padding-right: 10px;
+  padding-bottom: 10px;
+  float: right;
+}
+
+#logout-button, #logOutButton{
+ cursor: pointer; 
+}
+
+.subpagetitle{
+  padding-left: 5px;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+
+.main-container{
+ position: absolute;
+  width :95%;
+  left: 2%;
+  right:2%;
+  top:6%;
+ border-radius: 0px 0px 15px 15px;
+ background-color: #f6f0bc;
+ /*margin-left: 2%;
+ margin-right: 2%;*/
+ /*margin-bottom: 5%;*/
+ min-height: 90%;
+ height:auto;
+ padding: 5px;
+ clear:both;
+}
+
+
+.setupAssessmentContainer{
+  height: auto;
+}
+
+.main-list, .classes-list{
+  list-style-type: none;
+}
+
+.main-list li, .classes-list li{
+ /*margin: 10px;*/
+ /*flex: 1;*/
+ padding: 3px;
+ border: 2px solid #f6f0bc;
+ /*border-right: 15px solid green;*/
+ border-radius: 5px;
+}
+
+/*Grades table:*/
+table, th, td {
+ border: 1px solid black; 
+ border-collapse: collapse;
+ padding: 5px;
+}
+
+table button{
+  background-color: #ff8080;
+  border-radius: 0;
+}
+
+.astric{
+ color: red;
+}
+
+li{
+ padding: 10px;
+ font-size: medium;
+}
+
+.classDate{
+ font-weight: normal;
+ font-size: small; 
+}
+
+/*.taskButton{
+ cursor: pointer;
+ margin: 5px;
+}*/
+
+button{
+ margin: 5px;
+ height: 2em;
+ background-color: white;
+ cursor:pointer;
+ border-radius: 25px
+}
+
+#pwdchange{
+ color: blue;
+ cursor: pointer;  
+}
+#pwdchange:hover{
+ text-decoration: underline;
+}
+
+
+footer{
+}
+
+
+/*Tool Tip: */
+#downloadAssessmentReport{
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+#downloadAssessmentReport .tooltiptext{
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#downloadAssessmentReport .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+#downloadAssessmentReport:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ------------------ */
+
+.button-container{
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.button-container .tooltiptext{
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.button-container .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.button-container:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}

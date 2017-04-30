@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+   <link rel="stylesheet" href="/styles/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="/styles/style.css">
+   <title>Faculty Portal</title>
+ </head>
+ <body>
+   <header>
+     <div class= "header-container">
+         <div class="welcome-container">
+            <span class="welcome">Welcome Professor <span class="username">...</span></span>
+         </div>
+         <div class="logout-container">
+            <span id="logout-button">Logout</span>
+         </div> 
+     </div>
+   </header>
+
+   <main>
+     <div class="main-container">
+       <div class="classes-container">
+             <button id="addClass" class="fa fa-plus-square"> Add a Class </button>
+          <h2>Classes: <h2>
+          <ul class="main-list">
+          </ul>
+         
+       </div><!-- End of classes-container-->
+       
+       <div class="addClass-form">
+          <h3>Adding a new class: </h3>
+          <input class="classSessionId" type="text" placeholder="Class number"><span class="astric">*</span>
+          <br><br>
+          <input class="classNum" type="text" placeholder="Class code (ex: 225-01)"><span class="astric">* </span><span class="fa fa-info-circle"> For class code, please add section number along with it.</span>
+          <br><br> 
+          <input class="className" type="text" placeholder="Class name"><span class="astric">*</span>
+          <br><br>
+          <textarea class="classDescription" rows="4" cols="50" placeholder="Class description..."></textarea><span class="astric">*</span>
+          <br><br>
+          <input class="startDate" type="text" placeholder="Start date(yyyy-mm-dd)"><span class="astric">*</span>
+          
+          <input class="endDate" type="text" placeholder="End date(yyyy-mm-dd)"><span class="astric">*</span>
+          <br><br>
+          
+          <input class="startTime" type="text" placeholder="Starting time(hh:mm)"><span class="astric">*</span>
+          
+          <input class="endTime" type="text" placeholder="Ending time(hh:mm)"><span class="astric">* </span> <span class="fa fa-info-circle"> For time, please use military formant (24 hours).</span><br><br>
+
+          <br><br>
+          <br><br>
+          <button id="addClassButton" class="fa fa-plus-square"> Add Class</button>
+          <button id="cancelAdding">Cancel</button>
+       </div><!--End of addClass-form -->
+        
+     </div><!--End of main-container-->
+   </main>
+
+   <footer>
+    <div class="footer-container">
+      <div class="rightSide">
+         <p>Email: deannaji@csu.fullerton.edu</p>
+      </div>   
+      <div class="leftSide">
+      <p>Developed by: Dean Naji<br><br>
+        Graduate student at<br> 
+        California State University, Fullerton.
+      </p>
+      </div>
+      <div class="middleSide">
+         <p>Icons by: http://fontawesome.io/icons/</p>
+      </div>  
+    </div>
+   </footer>
+    <script src="/javascripts/lib/jquery-2.2.4.min.js"></script>
+    <script src="/javascripts/faculty.js"></script>
+ </body>
+</html>

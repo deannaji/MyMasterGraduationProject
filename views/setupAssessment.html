@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/styles/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style2.css">
+	<title>Setup Assessment</title>
+</head>
+<body>
+  <header>
+        <div class="header-container">
+            <span class="subpagetitle">Setup Assessment for class <span id="classname">...</span></span>
+        </div>
+  </header>
+  <main> 
+     <div class="main-container">
+	 
+      <div class="setupAssessmentContainer">
+		<button id="addIndicator" class="fa fa-plus-square"> Add Indicator</button>
+		<p>
+			<ol class="IndicatorsList">
+			</ol>
+		</p>
+		<br>
+		<br>
+		<p>
+			<button id="backToClassesPage" class="fa fa-arrow-left"> Go Back</button>
+		</p>
+	  </div>
+
+	  <div class="addIndicatorContainer">
+	    <h2>Add Indicator:</h2>
+	     <h3>Select an Indicator:</h3>
+		 <p>
+		    <select class="indicatorsSelect">
+				<option value="default">Select Indicator type</option>
+	    	</select>
+        </p>
+       
+        <br>
+
+        <h3>Select the type of work:</h3> 
+		 <p>
+		    <select class="typeOfWork">
+				<option value="default">Select Student's work type</option>
+	    	</select>
+        </p>
+		<br>
+
+		<h3>Upload Assessment Files:</h3>
+		<p class="note">Please make sure that each indicator has unique file name,<br> 
+           no two indicators can share the same file.</p>
+		<form class="uploadForm" action="/uploadIndicatorWork" method="post" enctype="multipart/form-data">
+ 		    <input type="hidden" name="session_id" id="session_id" value="" />
+            <input type="hidden" name="indicator" id="indicator" value="" />
+		    <input type="hidden" name="typeofwork" id="typeofwork" value="" />
+			<p>
+			  Satisfactory work:
+			  <input type="file" name="satisfactory" id="satisfactoryFile">
+            </p>
+            <p>
+              Developing work:
+			  <input type="file" name="developing" id="developingFile">
+            </p>
+            <p>
+              Unsatisfactory work:
+			  <input type="file" name="unsatisfactory" id="unsatisfactoryFile"> 
+            </p>
+		</form>		
+		<br>
+		<br>
+		<br>
+		<p>
+		    <button id="saveChanges" class="fa fa-save"> Save Changes</button>
+			<button id="backToAssessmentSetup" class="fa fa-arrow-left"> Go Back</button>
+		</p>
+	  </div>
+  </div>
+ </main>
+ <footer>
+ </footer>
+</body>
+
+<script src="/javascripts/lib/jquery-2.2.4.min.js"></script>
+<script src="/javascripts/setupAssessment.js"> </script>
+</html>

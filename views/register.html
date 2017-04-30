@@ -1,0 +1,31 @@
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+     <link rel="stylesheet" href="/styles/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="/styles/formsheet.css">
+     <title>New user registration</title>
+  </head>
+  <body>
+    <main>
+       <div class="main-container">
+            <h3>New user registration</h3>
+            <p class="fa fa-info-circle"> Please complete all fields.</p> 
+            <div class="register-form">
+              <input id="firstName" type="text" placeholder="First name"><span class="astric">*</span>
+              <input id="lastName" type="text" placeholder="Last name"><span class="astric">* </span><span class="fa fa-info-circle"> Please capitalize the first letter of first & last name.</span><br><br>
+              <input id="email" type="text" placeholder="Email address"><span class="astric">*</span><br><br> 
+              <input id="username" type="text" placeholder="username"><span class="astric">*</span><br><br>
+              <input id="password" type="password" placeholder="password"><span class="astric">*</span><br><br>
+              <button id="register-button">Register</button>
+            </div>
+            <br>
+            <br>
+            <a href="index.html" class="fa fa-arrow-left"> Go Back</a>
+       </div>
+    </main>
+  </body>
+
+<script src="/javascripts/lib/jquery-2.2.4.min.js"></script>
+<script src="/javascripts/register.js"></script>
+</html>
